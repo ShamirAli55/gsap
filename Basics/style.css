@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body,html
+{
+    height: 100%;
+    width: 100%;
+}
+body
+{
+    background-color: rgb(69, 66, 66);
+}
+#box
+{
+    background-color: crimson;
+    height: 300px;
+    width: 300px;
+}
+#box1
+{
+    background-color: crimson;
+    height: 300px;
+    width: 300px;
+}
+h1
+{
+    color: white;
+}

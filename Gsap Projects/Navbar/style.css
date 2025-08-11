@@ -51,6 +51,7 @@ nav i
     background-color: rgba(255, 255, 255, 0.2);
     top:0;
     right:-40%;
+    overflow: hidden;
     backdrop-filter: blur(30px);
     padding: 150px 60px;
 }
@@ -62,6 +63,10 @@ nav i
     color: #111;
     transition: all ease 0.5s;
 }
+.container h4:hover
+{
+    border-bottom: 1px solid #dadada;
+}
 .container h4::after
 {
     content:"";
@@ -72,12 +77,12 @@ nav i
     left: 0;
     border-bottom: 3px solid red;
 }
-.container h4:hover::after
+/* .container h4:hover::after
 {
     transform-origin: left;
     transition: all ease 0.5s;
     width: 45%;
-}
+} */
 /* .container h4::before
 {
     content:"";

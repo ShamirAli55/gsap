@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: rgb(69, 66, 66);
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+
+
+#page1 {
+    background-color: rgb(139, 16, 173);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#page2 {
+    background-color: rgb(16, 173, 158);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#page3 {
+    background-color: rgb(173, 113, 16);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap:50px;
+}
+#page2 h1
+{
+    font-weight: 600;
+    font-size:40vw;
+}

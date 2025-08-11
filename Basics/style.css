@@ -18,3 +18,13 @@ body
     height: 300px;
     width: 300px;
 }
+#box1
+{
+    background-color: crimson;
+    height: 300px;
+    width: 300px;
+}
+h1
+{
+    color: white;
+}

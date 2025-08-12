@@ -1,0 +1,276 @@
+@font-face {
+    font-family: Neue;
+    src: url("./assets/NeueMachina-Regular.otf") format("opentype");
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: Neue, Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: #111;
+    overflow-x: hidden ;
+}
+
+#section-1 {
+    height: 100%;
+    width: 100%;
+}
+
+nav {
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vw 7vw;
+    position: relative;
+}
+
+nav h1 {
+    font-size: 2vw;
+}
+
+nav i {
+    padding: 2vw;
+    padding-right: .5vw;
+    display: inline-block;
+    transform: rotate(-10deg);
+}
+
+.tags {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    position: relative;
+}
+
+.tags a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    position: relative;
+}
+
+.tags .quote {
+    border: 3px solid white;
+    /* White by default */
+    padding: 1.2vw 2.3vw;
+    border-radius: 10px;
+    position: relative;
+    font-weight: 700;
+}
+
+.tags .quote:hover {
+    border: 3px solid transparent;
+    background:linear-gradient(#111, #111) padding-box,
+    linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet) border-box;
+    background-size: 300% 100%;
+    animation: rainbowMove 2s linear infinite;
+}
+
+@keyframes rainbowMove {
+    0% {
+        background-position: 0% 0;
+    }
+
+    100% {
+        background-position: 100% 0;
+    }
+}
+
+.container {
+    display: flex;
+    height: 85%;
+    width: 100%;
+}
+
+.left {
+    width: 50%;
+    height: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.left h1 {
+    /* background-color: blueviolet; */
+    padding: 2vw 2vw 2vw 5vw;
+    font-size: 4vw;
+    font-weight: 500;
+}
+
+.left p {
+    font-size: 1.3vw;
+    padding:0 5vw;
+}
+
+.left button {
+    width: fit-content;
+    border: none;
+    padding: 1.2vw 3vw;
+    border-radius: 10px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    margin: 1vw 5vw;
+    cursor: pointer;
+    transition: transform ease-in-out 0.3s;
+}
+
+.left button:hover {
+    transform: scale(1.1);
+}
+
+.right {
+    width: 50%;
+    height: 100%;
+    background-image: url(https://xbm360.com.br/wp-content/uploads/2024/10/Illustration.svg);
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+.tags a::after {
+    content: "";
+    width: 0%;
+    border-bottom: 2px solid #fff;
+    position: absolute;
+    top: 100%;
+    left: 4%;
+}
+
+.tags a:hover::after {
+    transition: all ease 0.5s;
+    width: 100%;
+}
+
+.quote:hover::after {
+    width: 0% !important;
+}
+
+
+#section-2 {
+    min-height: 100vh;
+    width: 100%;
+    /* background-color: #04fb84; */
+}
+.top
+{
+    height: 20vh;
+    width: 100%;
+    /* background-color: red; */
+}
+.top .img_container
+{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4vw;}
+.top img
+{
+    object-fit: cover;
+    height: 60px;
+    display: inline-block;
+}
+.top #img3
+{
+    height: 200px;
+}
+.sec-bottom
+{
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    /* background-color: red; */
+    padding:6vw;
+}
+.sec-bottom h1
+{
+    font-size: 2vw;
+    font-weight: 500;
+    color: #111;
+    background-color: lawngreen;
+    padding: .3vw;
+    border-radius: 2px;
+}
+.sec-bottom p
+{
+    width: 60%;
+    font-size: 1vw;
+    color: #fff;
+    padding: 0 2vw;
+}
+.card-container 
+{
+    height: 83%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    padding: 4vw;
+    gap:3vw
+}
+.card-container .card
+{
+    flex-shrink: 0;
+    width: 48%;
+    height: 350px;
+    overflow: hidden;
+    background-color: #04fb84;
+    border: 3px solid #fff;
+    border-radius:30px;
+    box-shadow:0 15px 0px #fff;
+    display: flex;
+}
+.card-container.card .leftt
+{
+    /* background-color: red; */
+    height: 100%;
+    width: 50%;
+}
+.card .leftt h1
+{
+    width: 70%;
+    font-size: 1.5vw;
+    padding: 2vw;
+    /* background-color: lawngreen; */
+}
+.card .leftt p
+{
+    width: 60%;
+    font-size: 1.2vw;
+    padding: 0 2vw;
+}
+.card .leftt p i
+{
+    color: lawngreen;
+    background-color: #fff;
+    border-radius: 100px;
+    padding: .5vw;
+    margin-right: .3vw;
+}
+.card .rightt
+{
+    height: 100%;
+    width: 50%;
+}
+.card .rightt img
+{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
